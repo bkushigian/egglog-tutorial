@@ -206,7 +206,7 @@
 <p>Here, we use a new keyword called <code>function</code> to define a table that respects the functional dependency.
  A relation is just a function with output domain <code>Unit</code>.
  By defining <code>edge</code> and <code>path</code> with <code>function</code>, we can associate a length to each path.</p>
-<p>What happens it the same tuple of a function is mapped to two values?
+<p>What happens if the same tuple of a function is mapped to two values?
  In the case of relation, this is easy: <code>Unit</code> only has one value, so the two values must be identical.
  But in general, that would be a violation of functional dependency, the property that <code>a = b</code> implies <code>f(a) = f(b)</code>.
  Egglog allows us to specify how to reconcile two values that are mapped from the same tuple using <em>merge expressions</em>.</p>
